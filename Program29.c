@@ -1,0 +1,32 @@
+#include<stdio.h>
+void Display(int INO)
+{
+    int iCnt=0;
+    //Updater
+    if (INO <0)
+    {
+        INO=-INO;
+    } 
+    for(iCnt=1;iCnt<=INO;iCnt ++)
+    {
+    printf("Jay Ganesh \n");
+     }     
+
+}
+
+int main ()
+{
+   
+   int iValue=0;
+   
+
+   printf("Enter the Frequency:");
+   scanf("%d",&iValue);
+
+   Display(iValue);
+   
+         
+    return 0;
+
+}
+  
