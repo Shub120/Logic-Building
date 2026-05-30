@@ -1,0 +1,41 @@
+// type 2
+import java.util.Scanner;
+
+class Program43
+{
+public static boolean CheckDivVisible (int iNo)
+{
+    if ((iNo % 3 ==0)&&(iNo % 5 ==0))
+    {
+        return true;
+    }
+    else
+    {
+        return false ;
+    }
+}
+
+
+    public static void main (String a[])
+    {
+        Scanner sobj = new Scanner(System.in);
+        int iValue = 0;
+        boolean bRet=false;
+
+        System.out.println("Enter number: ");
+        iValue= sobj.nextInt();
+
+        bRet = CheckDivVisible(iValue);
+
+        if(bRet == true)
+        {
+            System.out.println ("Number is divisible by 3& 5");
+
+        }   
+        else 
+        {
+            System.out.println("NUmber is not divisible by 3 & 5");
+        }    
+
+    }
+}
